@@ -1,0 +1,24 @@
+Firmware Scenarios : 
+Below Scenarios for Update Manually 
+
+Scenario 1
+
+AC Online / Power Off State
+
+Click on Update button > First MQTT command to Power ON AC > FOTA triggered [MQTT] > Power OFF AC [MQTT]
+
+ 
+
+Scenario 2
+
+AC Online /Power ON State
+
+Click on Update Button > FOTA Triggered > Message to User for keep AC in standby Mode [Power off state[ for 30 minutes
+
+ 
+
+Scenario 3
+
+AC Offline
+
+Update button in disable state
