@@ -1,0 +1,175 @@
+Venkatesh phone with Venkatesh Device [Android 13]- Tried 3 times - Onboarding working fine 
+
+Shrikant Samsung phone with Venkatesh Device[Android 13} - Tried 3 times - Onboarding working fine 
+
+Shrikant Redmi Phone with Shrikant Device [Android 13] - Tried 3 times - Onboarding working fine 
+
+[15:28] Venkatesh K
+
+typedef enum uob_dm_response
+
+ 
+
+{
+
+ 
+
+    D2M_MSG_PAYLOAD_LENGTH_OK                   = 113, // Success
+
+ 
+
+    D2M_MSG_PAYLOAD_LENGTH_ISSUE                = 114,
+
+ 
+
+    // Packet de-cryption
+
+ 
+
+    D2M_MSG_PAYLOAD_DECRYPT_SUCCESS             = 101, // Success
+
+ 
+
+    D2M_MSG_PAYLOAD_DECRYPT_FAIL                = 102,
+
+ 
+
+    // Home Wifi connection
+
+ 
+
+    D2M_MSG_HOME_WIFI_CONNECTED                 = 110, // Successfully connected
+
+ 
+
+    D2M_MSG_HOME_WIFI_AP_NOT_FOUND              = 115, // AP NOT FOUND
+
+ 
+
+    D2M_MSG_HOME_WIFI_LOGIN_FAILED              = 105, // Authentication Error
+
+ 
+
+    // Device registration
+
+ 
+
+    D2M_MSG_REGISTRATION_CONNECTED_CLOUD        = 111, // Registration API successful (TBD)
+
+ 
+
+    D2M_MSG_REGISTRATION_DEVICE_ALREADY_ADDED   = 116, // 403
+
+ 
+
+    D2M_MSG_REGISTRATION_SERVER_INTERNAL_ERROR  = 117, // HTTP 500
+
+ 
+
+    D2M_MSG_REGISTRATION_RESPONSE_PARSING_SERVER= 120, // Response parsing error
+
+ 
+
+    D2M_MSG_REGISTRATION_CANT_RCH_SERVER        = 104, // Any other error
+
+ 
+
+    // IAM Login
+
+ 
+
+    D2M_MSG_IAM_LOGIN_SUCCESS                   = 112, // (TBD)
+
+ 
+
+    D2M_MSG_IAM_AUTHENTICATION_ERROR            = 118, // HTTP 401
+
+ 
+
+    D2M_MSG_IAM_SERVER_INTERNAL_ERROR           = 122, // HTTP 500
+
+ 
+
+    D2M_MSG_IAM_RESPONSE_PARSING_SERVER         = 121, // Response parsing error
+
+ 
+
+    D2M_MSG_IAM_LOGIN_FAILED                    = 106, // Any other error
+
+ 
+
+    // MQTT Connection
+
+ 
+
+    D2M_MSG_MQTT_CONNECTED_SUCCEEDED            = 123, // MQTT Connected
+
+ 
+
+    D2M_MSG_MQTT_CONNECTION_FAILED              = 124, // MQTT Connection failed    // All Success
+
+ 
+
+    D2M_MSG_ALL_SUCCESS                         = 200,
+
+ 
+
+    // TBD
+
+ 
+
+    D2M_MSG_MEMORY_ALLOCATION_ERROR             = 119, // Memory allocation failure at connectivity module
+
+ 
+
+    D2M_MSG_INTERNAL_ERROR                      = 103, // All other internal errors
+
+ 
+
+    // Last error code - If all Ok
+
+ 
+
+    D2M_ACK                                     = 100, // NOT SENT
+
+ 
+
+    D2M_MSG_RESEND_PAYLOAD                      = 108,
+
+ 
+
+    D2M_MSG_FAULTY_DEVICE                       = 109,
+
+ 
+
+    D2M_MSG_NET_CONNECT_FAIL                    = 107,
+
+ 
+
+    //internal
+
+ 
+
+    D2M_MSG_VERSION_PKT                         = 1,
+
+ 
+
+    D2M_MSG_PAYLOAD_PARSE_ERROR                 = 501,
+
+ 
+
+ 
+
+    // NOTE: Reserved Wi-Fi disconnect reason codes in the range of value 1000 -1500.
+
+ 
+
+    // Offset 1000 is added in application to report the disconnect reason in wifi_err_reason_t.
+
+ 
+
+    // So, don't add any error codes in the range 1000 -1500.
+
+ 
+
+}uob_dm_response_e;
