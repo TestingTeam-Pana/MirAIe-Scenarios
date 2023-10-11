@@ -1,1 +1,12 @@
-M
+Pre-req : Firmware team to flash, provision and line test modules with proper QR code. Shrikant should have corresponding QR code pics and manual setup codes
+
+1. Provision, Linetest, commission one wifi module Perform MirAIe BLE onboarding and then do chip tool based Matter onboarding with 2 controllers 
+2. Factory reset WIFI module, Perform chip tool based matter onboarding with manual setup code and then do MirAIe BLE based onboarding
+3. Factory reset WIFI module, Perform Matter onboarding with MirAIe app and then MirAIe ble based onboarding with another MirAIe app
+4. Factory reset WIFI module, Perform Matter onboarding with MirAIe app from one MirAIe account. Then Perform Matter onboarding with MirAIe app from another MirAIe account.
+5. Control from respective ecosystems in each of the above cases and see if the other ecosystems get events
+6. Power off and Power on AC and see if respective controllers discover and are able to control
+7. Control from MirAIe app ( after MirAIe ble onboarding ) by being on Mobile data and check if other controllers in the same network as AC get events
+8. Control from MirAIe app using local control ( if app supports it )
+9. Try controlling from non-MirAIe controller when the AC is at standby and see what happens
+
