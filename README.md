@@ -1,1 +1,1 @@
-# MirAIe-Scenarios
+# MirAIe-Projects Details 
