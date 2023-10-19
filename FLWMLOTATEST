@@ -1,0 +1,23 @@
+Scenario1 : 
+
+[Without Onboard FLWM in App ] User go to Setting > Upgrade Firmware> Firmware update successfully > Onboard FLWM Machine in App > 
+
+Problem 1 : App not showing latest version updated on FLWM Device Setting Page 
+
+Problem 2 : Onboard FLWM not showing Online 
+
+
+Scenario2 : 
+
+FLWM Onboarded in App > User go to Setting > Upgrade Firmware > Firmware Update Successfully
+
+Problem 1 : App not showing latest version updated on FLWM Device Setting Page 
+
+Problem 2 : Onboard FLWM not showing online 
+
+
+Scenario3: Power OFF FLWM and Power ON 
+
+FLWM Reonboarding > Onboarding Successful > Now Version updated to 1.30 in App 
+
+Problem 1 : App still showing FLWM Offline 
